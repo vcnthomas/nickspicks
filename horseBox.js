@@ -1,7 +1,7 @@
 function boxMinBet(numberOfHorses) {
     let result = numberOfHorses;
-    if (numberOfHorses == 0 || numberOfHorses == 1)
-return "Please enter two or more horses";
+    if (numberOfHorses <= 1 || numberOfHorses > 10)
+return "Please enter a valid number of horses";
 while (numberOfHorses > 1){
     numberOfHorses--;
     result *= numberOfHorses
